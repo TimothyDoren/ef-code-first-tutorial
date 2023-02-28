@@ -22,6 +22,8 @@ namespace ef_code_first_tutorial.Models
         
         public bool Active { get; set; } = true;
 
+        public virtual ICollection<Order> Orders { get; set; }
+
         public Customer(){ }
 
 
